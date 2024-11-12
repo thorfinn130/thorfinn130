@@ -1,0 +1,19 @@
+- 👋 Hi, I’m @thorfinn130
+- 👀 I’m interested in ...
+- 🌱 I’m currently learning ...
+- 💞️ I’m looking to collaborate on ...
+- 📫 How to reach me ...
+- 😄 Pronouns: ...
+- ⚡ Fun fact: ...
+
+<!---
+thorfinn130/thorfinn130 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+You can click the Preview link to take a look at your changes.
+--->
+- 👋 Hi, I’m Thorfinn
+- 👀 I’m interested in Discord bots, Python programming, and AI technologies.
+- 🌱 I’m currently learning advanced Python and web development.
+- 💞️ I’m looking to collaborate on open-source Discord bots or AI projects.
+- 📫 How to reach me: thorfinn130@example.com
+- 😄 Pronouns: He/Him
+- ⚡ Fun fact: I can write code for hours without realizing time has passed!
