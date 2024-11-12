@@ -20,7 +20,7 @@ async def on_message(message):
     # ქართული და ინგლისური მესიჯების შემოწმება და პასუხი
     if message.content.lower() == "thorfina ravaxar":
         await message.channel.send("ravi aramishavs")
-    elif message.content.lower() == "თორფინა რავახარ":
+    elif message.content.lower() == "ტორფინა რავახარ":
         await message.channel.send("რავი არაფერს")
 
     # თუ სხვა კომანდები გაქვთ, საჭიროა ეს კოდი შეტყობინებების პროცესინგის დასასრულებლად 
