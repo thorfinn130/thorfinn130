@@ -1,19 +1,30 @@
-- 👋 Hi, I’m @thorfinn130
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
+import discord
+from discord.ext import commands
 
-<!---
-thorfinn130/thorfinn130 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
-- 👋 Hi, I’m Thorfinn
-- 👀 I’m interested in Discord bots, Python programming, and AI technologies.
-- 🌱 I’m currently learning advanced Python and web development.
-- 💞️ I’m looking to collaborate on open-source Discord bots or AI projects.
-- 📫 How to reach me: thorfinn130@example.com
-- 😄 Pronouns: He/Him
-- ⚡ Fun fact: I can write code for hours without realizing time has passed!
+intents = discord.Intents.default()
+intents.message_content = True
+
+bot = commands.Bot(command_prefix="!", intents=intents)
+
+# ბოტის გაშვებისას ინფორმაცია
+@bot.event
+async def on_ready():
+    print(f'ბოტი ჩართულია, სახელით: {bot.user}')
+
+# მესიჯის პასუხი კონკრეტულ ფრაზაზე
+@bot.event
+async def on_message(message):
+    if message.author == bot.user:
+        return
+
+    # ქართული და ინგლისური მესიჯების შემოწმება და პასუხი
+    if message.content.lower() == "thorfina ravaxar":
+        await message.channel.send("ravi aramishavs")
+    elif message.content.lower() == "თორფინა რავახარ":
+        await message.channel.send("რავი არაფერს")
+
+    # თუ სხვა კომანდები გაქვთ, საჭიროა ეს კოდი შეტყობინებების პროცესინგის დასასრულებლად 
+    await bot.process_commands(message)
+
+# ბოტის ტოკენი
+bot.run("MTI5NjEyMDg3MzIzMjYyOTg4Mg.GHvZXt.oxXHWT6SeNd67blZKfd1SuRbEaCsEiHKiCGImQ")
